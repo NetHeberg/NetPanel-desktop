@@ -24,6 +24,10 @@ function createWindow() {
     win = new BrowserWindow({
         width: 1200,
         height: 650,
+
+        minWidth: 665,
+        minHeight: 525,
+
         icon: 'build/icon.png',
         menu: false,
         webPreferences: {

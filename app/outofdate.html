@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ghost eShop Desktop - Out of date</title>
+    <title>NetPanel Desktop - Out of date</title>
   </head>
   <body>
     <style>
@@ -26,7 +26,7 @@
       const axios = require("axios");
       axios
         .get(
-          "https://api.github.com/repos/ghost-land/ge-desktop/releases/latest"
+          "https://api.github.com/repos/netheberg/NetPanel-desktop/releases/latest"
         )
         .then(function (response) {
           let latest = response.data.tag_name;
