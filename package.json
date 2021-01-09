@@ -1,0 +1,24 @@
+{
+  "name": "Template-Electron-Apps",
+  "version": "1.0.0",
+  "description": "Template for electron projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "cross-env ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true node build.js",
+    "dist:win": "npm run dist -- WINDOWS",
+    "dist:mac": "npm run dist -- MAC",
+    "dist:linux": "npm run dist -- LINUX"
+  },
+  "keywords": [],
+  "author": "stereo18",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^11.0.5",
+    "electron-builder": "^22.9.1"
+  }
+}
