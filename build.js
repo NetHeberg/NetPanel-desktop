@@ -18,8 +18,8 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'template',
-        productName: 'My template',
+        appId: 'netpanel-desktop',
+        productName: 'NetPanel Desktop',
         artifactName: '${productName}-setup-${version}.${ext}',
         copyright: 'Copyright © 2018-2020 stereo18',
         directories: {
@@ -45,11 +45,11 @@ builder.build({
             category: 'public.app-category.games'
         },
         linux: {
-            target: 'AppImage',
+            target: 'snap',
             maintainer: 'stereo18',
             vendor: 'stereo18',
-            synopsis: 'A template for electron',
-            description: 'Create electron apps with this template !',
+            synopsis: 'An access of NetPanel on desktop',
+            description: 'NetPanel is the game panel of NetHeberg.fr. With this app, you can access to the NetPanel with an desktop app',
             category: 'Game'
         },
         compression: 'maximum',
